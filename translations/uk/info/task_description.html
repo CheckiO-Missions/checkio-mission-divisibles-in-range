@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Давайте зробимо перепочинок, розглянувши задачу, досить просту, щоб її розв'язання потребувало лише пари умовних операторів та деяких арифметичних дій, але жодного циклу чи чогось більш вигадливого. Складність полягає у тому, щоб придумати умови, які покривають всі можливі випадки цієї задачі, включаючи всі потенційно складні випадки ребер та кутів, і при цьому ніде не перевищують один одного. 
+</p>
+
+<p style="text-align: justify;">
+    За заданими трьома цілими числами <code>start, end, n</code>, так що <code>start <= end</code>, порахуйте, скільки цілих чисел від <code>start</code> до <code>end</code> включно рівномірно діляться на <code>n</code>. Зверніть увагу, що <code>start</code> або <code>end</code> цілком можуть бути від'ємними або дорівнювати нулю, але <code>n</code> гарантовано більше нуля. Нижче наведено схему для вхідних даних <code>1, 9, 3</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}count-divisibles.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+   Звичайно, цю задачу можна було б розв'язати в один рядок з лінивим осмисленням. <strong>Спробуйте написати код без циклів, але використовуйте лише цілочисельну арифметику та умовні оператори, щоб докопатися до істини</strong>. 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Вхідні дані:</strong> Три цілих числа <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Вихідні дані:</strong> Ціле число <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Приклади:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Передумови:</strong>
+    <ul>
+    <li><i>start &lt;= end</i>;</li>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+<p><i>Задачу взято з сайту <span>Python CCPS 109</span>. Її розв'язано для <span>Ryerson Chang School of Continuing Education</span> за допомогою <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
