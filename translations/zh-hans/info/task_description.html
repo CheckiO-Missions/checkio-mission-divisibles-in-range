@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    让我们喘口气，来解决一个简单到只需要几个条件语句和一些算术运算，甚至不需要一个循环或其他更花哨的东西的问题。问题的难点在于，我们要想出的条件要能恰到好处地涵盖这个问题的所有可能情况，包括所有可能出现的棘手的边缘和角落情况，而不会在任何地方出现偏差。 
+</p>
+
+<p style="text-align: justify;">
+    给定三个整数<code>start, end, n</code> ，让<code>start <= end</code> ，数一数在<code>start</code> 和<code>end</code> 之间，有多少个整数能被<code>n</code> 平均整除。请注意，<code>start</code> 或<code>end</code> 都可以是负数或零，但<code>n</code> 保证大于零。下面是<code>1, 9, 3</code> 输入的方案。
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}count-divisibles.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+   当然，这个问题也可以用懒惰理解来解决。<strong>尽量不要使用循环代码，只使用整数运算和条件语句来找出真相。</strong>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>三个整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>输出：</strong>整数 <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>示例</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件</strong>
+    <ul>
+    <li><i>start &lt;= end</i>；</li>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+<p><i>该任务摘自<span>Python CCPS 109</span> 。它由<span>Ryerson Chang School of Continuing Education</span> 教授。<a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
