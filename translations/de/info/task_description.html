@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Lassen Sie uns eine Verschnaufpause einlegen, indem wir ein Problem angehen, das so einfach ist, dass seine Lösung nur ein paar bedingte Anweisungen und etwas Arithmetik erfordert, aber nicht einmal eine Schleife oder etwas Ausgefalleneres. Die Schwierigkeit besteht darin, Bedingungen zu finden, die alle möglichen Fälle dieses Problems genau abdecken, einschließlich aller potenziell trickreichen Rand- und Eckfälle, ohne irgendwo daneben zu liegen. 
+</p>
+
+<p style="text-align: justify;">
+    Geben Sie drei ganze Zahlen <code>start, end, n</code>, so dass <code>start <= end</code>, zählen Sie, wie viele ganze Zahlen zwischen <code>start</code> und <code>end</code>, einschließlich, gerade durch <code>n</code> teilbar sind. Beachten Sie, dass entweder <code>start</code> oder <code>end</code> auch negativ oder Null sein können, aber <code>n</code> ist garantiert größer als Null. Hier ist das Schema für die Eingabe von <code>1, 9, 3</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}count-divisibles.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+   Sicher, dieses Problem könnte mit dem Lazy Comprehension als Einzeiler gelöst werden. <strong>Versuchen Sie, einen Code ohne Schleifen zu erstellen, sondern verwenden Sie nur Ganzzahlarithmetik und bedingte Anweisungen, um die Wahrheit herauszufinden.</strong> 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Drei ganze Zahlen <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Ganzzahl <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+    <li><i>start &lt;= end</i>;</li>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+<p><i>Die Aufgabe wurde von <span>Python CCPS 109</span> übernommen. Sie wird für <span>Ryerson Chang School of Continuing Education</span> von <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
