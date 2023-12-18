@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Proszę pozwolić sobie na chwilę wytchnienia, zajmując się problemem na tyle prostym, że jego rozwiązanie wymaga jedynie kilku instrukcji warunkowych i kilku działań arytmetycznych, ale nie wymaga nawet jednej pętli ani niczego bardziej wymyślnego. Trudność polega na wymyśleniu warunków, które obejmą wszystkie możliwe przypadki tego problemu, włączając w to wszystkie potencjalnie podchwytliwe przypadki brzegowe i narożne. 
+</p>
+
+<p style="text-align: justify;">
+    Biorąc pod uwagę trzy liczby całkowite <code>start, end, n</code>, takie że <code>start <= end</code>, proszę policzyć, ile liczb całkowitych z przedziału od <code>start</code> do <code>end</code> włącznie jest podzielnych przez <code>n</code>. Proszę zauważyć, że liczby <code>start</code> lub <code>end</code> mogą być ujemne lub równe zero, ale liczba <code>n</code> musi być większa od zera. Oto schemat dla danych wejściowych <code>1, 9, 3</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}count-divisibles.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+   Oczywiście, ten problem może być rozwiązany jako one-liner z lazy comprehension. Proszę spróbować napisać kod <strong>bez pętli, ale używając tylko arytmetyki całkowitoliczbowej i instrukcji warunkowych</strong>. 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Trzy liczby całkowite <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Wyjście:</strong> Liczba całkowita <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Warunki wstępne:</strong>
+    <ul>
+    <li><i>start &lt;= end</i>;</li>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+<p><i>Misja została zaczerpnięta z <span>Python CCPS 109</span>. Jest ona nauczana dla <span>Ryerson Chang School of Continuing Education</span> przez <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
