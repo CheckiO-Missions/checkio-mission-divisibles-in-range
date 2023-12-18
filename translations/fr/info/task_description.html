@@ -1,0 +1,51 @@
+<!-- Describe task in general -->
+<p style="text-align: justify;">
+    Reprenons notre souffle en nous attaquant à un problème suffisamment simple pour que sa solution ne nécessite que quelques instructions conditionnelles et un peu d'arithmétique, mais pas même une boucle ou quoi que ce soit de plus fantaisiste. La difficulté consiste à trouver les conditions qui couvrent parfaitement tous les cas possibles de ce problème, y compris tous les cas limites et les cas d'angle potentiellement délicats, sans être à côté de la plaque nulle part. 
+</p>
+
+<p style="text-align: justify;">
+    Étant donné trois entiers <code>start, end, n</code>, de sorte que <code>start <= end</code>, comptez combien d'entiers entre <code>start</code> et <code>end</code>, inclus, sont également divisibles par <code>n</code>. Notez que <code>start</code> ou <code>end</code> peuvent être négatifs ou nuls, mais que <code>n</code> est garanti supérieur à zéro. Voici le schéma pour l'entrée <code>1, 9, 3</code>.
+</p>
+
+<p style="text-align: center;">
+    <img  title="example" src="{{MEDIA}}count-divisibles.png" alt="example" style="max-height: 200px"/>
+</p>
+
+<p style="text-align: justify;">
+   Bien sûr, ce problème pourrait être résolu en une ligne avec la compréhension paresseuse. <strong>Essayez d'avoir un code sans aucune boucle, mais utilisez uniquement l'arithmétique des nombres entiers et les instructions conditionnelles pour découvrir la vérité</strong>. 
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Trois entiers <span>({% if is_js %}number{% else %}int{% endif %})</span>.
+</p>
+
+<p>
+   <strong>Sortie:</strong> Entier <span>({% if is_js %}number{% else %}int{% endif %})</span>. 
+</p>
+
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<!-- <p class="for_info_only">
+
+    <strong>How it’s used:</strong>
+    <i>(math is used everywhere)</i>
+</p> -->
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Conditions préalables:</strong>
+    <ul>
+    <li><i>début &lt;= fin</i>;</li>
+    <li><i>n &gt; 0</i>.</li>
+    </ul>
+</p>
+<p><i>La mission a été tirée de <span>Python CCPS 109</span>. Elle est enseignée à <span>Ryerson Chang School of Continuing Education</span> par <a href="https://github.com/ikokkari">Ilkka Kokkarinen</a></i></p>
